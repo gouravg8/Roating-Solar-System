@@ -1,0 +1,357 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    background: url(images/raphael-nogueira-svbDI1Pq30s-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* ye dono to sahi values hain par baki neeche jo bhi values vh ya vw me hai unko % me convert kar do qki vh = total height hota hai or 
+    tumhare naptune ki height body se bhi jyada hai, samjhe? */
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+}
+
+h1 {
+    color: aqua;
+}
+
+.sun {
+    height: 15vh;
+    width: 15vh;
+    display: flex;
+    background-image: url(images/sun-unsplash.jpg);
+    border-radius: 50%;
+    background-size: cover;
+    box-shadow: 0 0 6em orange;
+    background-position: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    border-color: transparent transparent;
+}
+
+.mercury{
+    height: 15%;
+    width: 15%;
+    display: flex;
+    background-image: url(images/mercury-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    z-index: -1;
+    position: absolute;
+    box-shadow: 0 0 1em red;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    margin: auto;
+    transform: rotate(0deg);
+    animation: orbit2 5s linear infinite;
+    
+}
+
+@keyframes orbit2{
+    0%{transform:rotate(0deg) translateY(-90px) rotate(0deg);}
+    100%{transform:rotate(360deg) translateY(-90px) rotate(-360deg);}
+}
+
+p{
+    color: aqua;
+    font-family: system-ui;
+    position: absolute;
+    left: -62px;
+    top: -11px;
+}
+
+.mercury-outline,.venus-outline-1,.earth-outline-1,.mars-outline-1,.jupiter-outline-1,.saturn-outline-1,.uranus-outline-1,.neptune-outline-1{
+    border-radius: 50%;
+    border: 1px dotted chartreuse;
+    position:  absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.mercury-outline{
+    height: 25vh;
+    width: 25vh;
+    
+} 
+
+.venus{
+    height: 10%;
+    width: 10%;
+    display: flex;
+    background-image: url(images/venus-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    z-index: -1;
+    border-radius: 50%;
+    position:  absolute;
+    box-shadow: 0 0 2em aqua;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    margin: auto;
+    transform: rotate(0deg);
+    animation: orbit3 10s linear infinite;
+}
+
+@keyframes orbit3{
+    0%{transform:rotate(0deg) translateY(-130px) rotate(0deg);}
+    100%{transform:rotate(360deg) translateY(-130px) rotate(-360deg);}
+}
+.venus-outline-1{
+    height: 35vh;
+    width: 35vh;
+    
+}
+
+.earth{
+    height: 12%;
+    width: 12%;
+    background-image: url(images/earth-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    z-index: -1;
+    border-radius: 50%;
+    position:  absolute;
+    box-shadow: 0 0 2em blue;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    margin: auto;
+    transform: rotate(0deg);
+    animation: orbit4 13s linear infinite;
+}
+
+@keyframes orbit4{
+    0%{transform:rotate(0deg) translateY(-190px) rotate(0deg);}
+    100%{transform:rotate(360deg) translateY(-190px) rotate(-360deg);}
+}
+.earth-outline-1{
+    height: 50vh;
+    width: 50vh;
+    
+}
+
+.earth-circle{
+    height: 10vh;
+    width: 10vh;
+    border: 1px dotted aqua;
+    position: relative;
+    left: -8px;
+    right: -8px;
+    border-radius: 40px;
+}
+
+.earth-inner{
+    height: 3%;
+    width: 3%;
+    display: flex;
+    background-image: url(images/moon-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    z-index: -1;
+    border-radius: 50%;
+    position:  absolute;
+    box-shadow: 0 0 1em white;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    margin: auto;
+    transform: rotate(0deg);
+    animation: orbit5 3s linear infinite;
+}
+
+@keyframes orbit5{
+    0%{transform:rotate(0deg) translateY(-50px) rotate(0deg);}
+    100%{transform:rotate(360deg) translateY(-50px) rotate(-360deg);}
+}
+
+.mars{
+    height: 7%;
+    width: 7%;
+    background-image: url(images/mars-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    z-index: -1;
+    border-radius: 50%;
+    position:  absolute;
+    box-shadow: 0 0 2em brown;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    margin: auto;
+    transform: rotate(0deg);
+    animation: orbit6 15s linear infinite;
+}
+
+@keyframes orbit6{
+    0%{transform:rotate(0deg) translateY(-245px) rotate(0deg);}
+    100%{transform:rotate(360deg) translateY(-245px) rotate(-360deg);}
+}
+.mars-outline-1{
+    height: 65vh;
+    width: 65vh;
+    
+}
+
+p{
+    color: aqua;
+    font-family: system-ui;
+    position: absolute;
+    left: -62px;
+    top: -11px;
+}
+
+.jupiter{
+    height: 10%;
+    width: 10%;
+    background-image: url(images/jupiter-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    z-index: -1;
+    border-radius: 50%;
+    position:  absolute;
+    box-shadow: 0 0 2em darkred;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    margin: auto;
+    transform: rotate(0deg);
+    animation: orbit7 20s linear infinite;
+}
+
+@keyframes orbit7{
+    0%{transform:rotate(0deg) translateY(-300px) rotate(0deg);}
+    100%{transform:rotate(360deg) translateY(-300px) rotate(-360deg);}
+}
+.jupiter-outline-1{
+    height: 80vh;
+    width: 80vh;
+    
+}
+
+.saturn{
+    height: 8%;
+    width: 8%;
+    background-image: url(images/saturn-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    z-index: -1;
+    border-radius: 50%;
+    position:  absolute;
+    box-shadow: 0 0 2em darkred;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    margin: auto;
+    transform: rotate(0deg);
+    animation: orbit8 30s linear infinite;
+}
+
+@keyframes orbit8{
+    0%{transform:rotate(0deg) translateY(-355px) rotate(0deg);}
+    100%{transform:rotate(360deg) translateY(-355px) rotate(-360deg);}
+}
+.saturn-outline-1{
+    height: 95vh;
+    width: 95vh;
+    
+}
+
+.uranus{
+    height: 6%;
+    width: 6%;
+    background-image: url(images/uranus-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    z-index: -1;
+    border-radius: 50%;
+    position:  absolute;
+    box-shadow: 0 0 2em darkblue;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    margin: auto;
+    transform: rotate(0deg);
+    animation: orbit9 40s linear infinite;
+}
+
+@keyframes orbit9{
+    0%{transform:rotate(0deg) translateY(-410px) rotate(0deg);}
+    100%{transform:rotate(360deg) translateY(-410px) rotate(-360deg);}
+}
+.uranus-outline-1{
+    height: 110vh;
+    width: 110vh;
+    
+}
+
+.neptune{
+    height: 5%;
+    width: 5%;
+    background-image: url(images/neptune-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    z-index: -1;
+    border-radius: 50%;
+    position:  absolute;
+    box-shadow: 0 0 2em darkblue;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    margin: auto;
+    transform: rotate(0deg);
+    animation: orbit10 50s linear infinite;
+}
+
+@keyframes orbit10{
+    0%{transform:rotate(0deg) translateY(-470px) rotate(0deg);}
+    100%{transform:rotate(360deg) translateY(-470px) rotate(-360deg);}
+}
+.neptune-outline-1{
+    height: 125vh;
+    width: 125vh;
+    
+}
